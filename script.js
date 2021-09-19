@@ -1,9 +1,9 @@
 const body = document.querySelector('.wrap');
 
 let r, g, b, opacity, square;
-const interval = 500;
-const genInterval = 600;
-const SQUARES_NUMBER = 3;
+const interval = 100;
+const genInterval = 200;
+const SQUARES_NUMBER = 700;
 
 for (let i = 0; i < SQUARES_NUMBER; i++) {
   square = document.createElement('div');
@@ -12,9 +12,12 @@ for (let i = 0; i < SQUARES_NUMBER; i++) {
 }
 function colorGen() {
   opacity = +Math.random().toFixed(2);
+  // r = 255;
+  b = 255;
+  // g = 255;
   r = +Math.floor(Math.random() * 252);
+  // b = +Math.floor(Math.random() * 252);
   g = +Math.floor(Math.random() * 252);
-  b = +Math.floor(Math.random() * 252);
 }
 
 let randomValue;
@@ -118,9 +121,9 @@ function checkClass(e) {
 // h - hide
 
 function blh() {
-  let element = document.querySelector('borderLeft')
-  element.style.borderLeft = '1px solid #000';
-  checkClass('borderLeft');
+    let element = document.querySelector('borderLeft')
+    element.style.borderLeft = '1px solid #000';
+    checkClass('borderLeft');
 }
 
 
